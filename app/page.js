@@ -37,8 +37,7 @@ export default function HomePage() {
   const trending = DESTINATIONS.filter((item) => item.trending);
 
   return (
-    <div className="space-y-16 pb-16">
-      {/* Hero Section */}
+    <div className="space-y-16 pb-16"> 
       <section className="relative bg-slate-900 text-white pt-24 pb-32 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 bg-gradient-to-r from-sky-900/80 to-slate-900/90 z-10" />
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-30" />
@@ -98,7 +97,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Categories */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-slate-900 mb-6">Browse by Category</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -120,7 +118,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Destinations */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-end mb-8">
           <div>
@@ -134,8 +131,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
-      {/* Trending Trips Horizontal Scroll */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-slate-900 mb-6">Trending Trips</h2>
         <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-none">
